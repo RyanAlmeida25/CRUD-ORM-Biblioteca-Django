@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ livro.titulo }}{% endblock %}
+
+{% block content %}
+<h1>{{ livro.titulo }}</h1>
+<dl class="details">
+    <dt>Autor</dt>
+    <dd>{{ livro.autor }}</dd>
+    <dt>Ano de publicação</dt>
+    <dd>{{ livro.ano_publicacao }}</dd>
+    <dt>Disponibilidade</dt>
+    <dd>{% if livro.disponivel %}Disponível{% else %}Indisponível{% endif %}</dd>
+</dl>
+<div class="actions-bar">
+    <a class="button" href="{% url 'biblioteca:livro_update' livro.pk %}">Editar</a>
+    <a class="button danger" href="{% url 'biblioteca:livro_delete' livro.pk %}">Excluir</a>
+    <a class="button secondary" href="{% url 'biblioteca:livro_list' %}">Voltar</a>
+</div>
+{% endblock %}
