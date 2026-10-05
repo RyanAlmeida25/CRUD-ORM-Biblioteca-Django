@@ -1,0 +1,42 @@
+[
+  {
+    "model": "biblioteca.livro",
+    "pk": 1,
+    "fields": {
+      "titulo": "Introdução à Computação",
+      "autor": "Ana Silva",
+      "ano_publicacao": 2021,
+      "disponivel": true
+    }
+  },
+  {
+    "model": "biblioteca.livro",
+    "pk": 2,
+    "fields": {
+      "titulo": "Banco de Dados na Prática",
+      "autor": "Carlos Souza",
+      "ano_publicacao": 2023,
+      "disponivel": true
+    }
+  },
+  {
+    "model": "biblioteca.livro",
+    "pk": 3,
+    "fields": {
+      "titulo": "Engenharia de Software",
+      "autor": "Marina Costa",
+      "ano_publicacao": 2020,
+      "disponivel": false
+    }
+  },
+  {
+    "model": "biblioteca.livro",
+    "pk": 4,
+    "fields": {
+      "titulo": "Python para Iniciantes",
+      "autor": "João Lima",
+      "ano_publicacao": 2024,
+      "disponivel": true
+    }
+  }
+]
