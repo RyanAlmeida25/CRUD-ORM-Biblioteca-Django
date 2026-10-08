@@ -9,8 +9,15 @@
     <dd>{{ livro.autor }}</dd>
     <dt>Ano de publicação</dt>
     <dd>{{ livro.ano_publicacao }}</dd>
+    <dt>Editora</dt>
+    <dd>{{ livro.editora }}</dd>
     <dt>Disponibilidade</dt>
     <dd>{% if livro.disponivel %}Disponível{% else %}Indisponível{% endif %}</dd>
+    <dt>Páginas</dt>
+    <dd>{{ livro.paginas }}</dd>
+    <dt>Preço</dt>
+    <dd>R$ {{ livro.preco }}</dd>
+    
 </dl>
 <div class="actions-bar">
     <a class="button" href="{% url 'biblioteca:livro_update' livro.pk %}">Editar</a>
